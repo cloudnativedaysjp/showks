@@ -2,23 +2,23 @@
 
 # showKsへの参加方法（簡易版）
 
-1. Github アカウントを準備
-2. [登録フォーム](https://form.showks.cloudnativedays.jp/)からユーザ登録（ユーザ名は`小文字`と`数字`と`ｰ`のみ利用可）
-3. あなた専用レポジトリへの `Collaborator invite` を受諾（`https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名/invitations`）
-4. あなた専用レポジトリ（`https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名`）にアクセス
-5. 開発用ブランチ（`feature`ブランチ）の `src/data/author.json` ファイル内にある `comment` の値を編集して commit
-6. 開発用ブランチ（`feature`ブランチ）から `staging` ブランチへ Pull Request
-7. `staging` ブランチへの Pull Request を merge
-8. [staging環境用のポータル画面](https://portal.stg.showks.cloudnativedays.jp)からあなたの Canvas アプリ内のコメントが更新されることを確認
-9. `staging`ブランチから`master`ブランチへ Pull Request
-10. `master`ブランチへの Pull Request を merge
-11. [production環境用のポータル画面](https://portal.showks.cloudnativedays.jp)からあなたの Canvas アプリ内のコメントが更新されることを確認
+1. Githubアカウントを準備
+2. [登録フォーム](https://form.showks.cloudnativedays.jp/)からユーザ登録（ユーザ名は `小文字` と `数字` と `ｰ` のみ利用可）
+3. あなた専用レポジトリへの `Collaborator invite` を受諾（ `https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名/invitations`）
+4. あなた専用レポジトリ（ `https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名`）にアクセス
+5. 開発用ブランチ（ `feature` ブランチ）の `src/data/author.json` ファイル内にある `comment` の値を編集してcommit
+6. 開発用ブランチ（ `feature` ブランチ）から `staging` ブランチへPull Request
+7. `staging` ブランチへのPull Requestをmerge
+8. [staging環境用のポータル画面](https://portal.stg.showks.cloudnativedays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+9. `staging` ブランチから `master` ブランチへPull Request
+10. `master` ブランチへのPull Requestをmerge
+11. [production環境用のポータル画面](https://portal.showks.cloudnativedays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
 
 # showKsへの参加方法（詳細版）
 
 ## 1. 事前準備
 
-showKs の参加には [Github](https://github.com) のアカウントが必要です。必ず事前に Github アカウントを作成し、ユーザ名を確認しておいてください。
+showKsの参加には[Github](https://github.com)のアカウントが必要です。必ず事前にGithubアカウントを作成し、ユーザ名を確認しておいてください。
 
 ## 2. ユーザ登録
 
@@ -29,39 +29,39 @@ showKs の参加には [Github](https://github.com) のアカウントが必要�
 登録フォームでは、次の情報を入力します。
 
 - **Username（必須）**
-    - showKs で使用するユーザ名です。
-    - Kubernetes のリソース名にも使用されるため `小文字` と `数字` と `ｰ` のみ利用可能です。
-    - 既存の Username と重複した場合はエラーになります。別の名前を選択してください。
-    - このユーザ名を元にあなた専用のリポジトリが [Github](https://github.com/cloudnativedaysjp) 上に作成されます。
+    - showKsで使用するユーザ名です。
+    - Kubernetesのリソース名にも使用されるため `小文字` と `数字` と `ｰ` のみ利用可能です。
+    - 既存のUsernameと重複した場合はエラーになります。別の名前を選択してください。
+    - このユーザ名を元にあなた専用のリポジトリが[Github](https://github.com/cloudnativedaysjp)上に作成されます。
 - **Github（必須）**
-    - あなたの Github アカウント名を入力してください。
-    - このアカウントはお絵かきアプリから Link されます。
-    - 存在しない Github アカウント名が指定された場合はエラーになります。
+    - あなたのGithubアカウント名を入力してください。
+    - このアカウントはお絵かきアプリからLinkされます。
+    - 存在しないGithubアカウント名が指定された場合はエラーになります。
 - **Twitter（必須）**
-    - あなたの Twitter アカウント名を入力してください。
-    - このアカウントはお絵かきアプリから Link されます。
-    - Twitter アカウントをお持ちでない場合は `cloudnativedaysjp` を指定します。
+    - あなたのTwitterアカウント名を入力してください。
+    - このアカウントはお絵かきアプリからLinkされます。
+    - Twitterアカウントをお持ちでない場合は `cloudnativedaysjp` を指定します。
 - **Comment**
     - 任意のメッセージを入力します。
     - このメッセージはお絵かきアプリに表示されます。
 
-入力が完了したら `Create Project` をクリックして Project を新規作成します。
+入力が完了したら `Create Project` をクリックしてProjectを新規作成します。
 
 処理の完了までは暫く時間がかかります。画面が遷移し `Project was successfully create` の表示がでるまで待機してください。
 
 ## 3. あなた専用レポジトリへの Collaborator invite の受諾
 
-遷移後のページには、あなた専用の確認用リンクが表示されています。このページをブックマークしておくと、後から Concourse CI や Github Repository へアクセスしやすくなるのでオススメです。
+遷移後のページには、あなた専用の確認用リンクが表示されています。このページをブックマークしておくと、後からConcourse CIやGithub Repositoryへアクセスしやすくなるのでオススメです。
 
-ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。このリポジトリは、 [showks-canvas](https://github.com/cloudnativedaysjp/showks-canvas) から Fork されたものです。
+ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。このリポジトリは、[showks-canvas](https://github.com/cloudnativedaysjp/showks-canvas)からForkされたものです。
 
-あなた専用のリポジトリには初期状態では編集権限が設定されていません。あなた専用のリポジトリの作成後に Github から Collaborator への Invite が自動で行われますのでこれを受諾します。
+あなた専用のリポジトリには初期状態では編集権限が設定されていません。あなた専用のリポジトリの作成後にGithubからCollaboratorへのInviteが自動で行われますのでこれを受諾します。
 
 処理手順の2.で最後に表示された画面にあるリンクから受諾画面へ遷移します。
 
 ![ユーザ登録処理の完了画面](./images/project_created.png)
 
-この処理完了後の画面を閉じてしまった場合は、直接受諾ページ（`https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名/invitations`）へアクセスしてください。
+この処理完了後の画面を閉じてしまった場合は、直接受諾ページ（ `https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名/invitations` ）へアクセスしてください。
 
 ![Invitationの受け入れ](./images/accept_invitation.png)
 
@@ -99,17 +99,17 @@ showKs の参加には [Github](https://github.com) のアカウントが必要�
 
 ## 5. 開発用ブランチから `staging` ブランチへPull Requestの発行
 
-開発用ブランチ（`feature`ブランチ）から `staging` ブランチへPull Requestを発行します。画面上部のタブから`Pull requests`を選択し`Compare & pull request`をクリックします。
+開発用ブランチ（ `feature` ブランチ）から `staging` ブランチへPull Requestを発行します。画面上部のタブから `Pull requests` を選択し `Compare & pull request` をクリックします。
 
 ![pull requestの作成](./images/new_pull_request.png)
 
-Pull Requestの送信先が開発用ブランチから`staging`ブランチへなっていることを確認してから`Create pull request`ボタンをクリックします。
+Pull Requestの送信先が開発用ブランチから `staging` ブランチへなっていることを確認してから `Create pull request` ボタンをクリックします。
 
 ![pull requestの発行](./images/create_pr.png)
 
-## 6. `staging`ブランチへのPull Requestをmerge
+## 6. `staging` ブランチへのPull Requestをmerge
 
-`staging`ブランチに開発ブランチからのPull Requestをmergeします。`Merge pull request`をクリックしてから、さらに`Confirm merge`をクリックしてmergeします。
+`staging` ブランチに開発ブランチからのPull Requestをmergeします。 `Merge pull request` をクリックしてから、さらに `Confirm merge` をクリックしてmergeします。
 
 ![Merge pull request1](./images/merge_pr1.png)
 
@@ -117,7 +117,7 @@ Pull Requestの送信先が開発用ブランチから`staging`ブランチへ�
 
 showKsで事前に準備されているパイプライン管理から、mergeを契機にあなたのアプリコンテナが自動的にstaging環境へビルド/デプロイされます。
 
-**注意：`author.json`以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
+**注意： `author.json` 以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
 
 ## 7. アプリ更新の確認（staging環境）
 
@@ -125,17 +125,17 @@ showKsで事前に準備されているパイプライン管理から、mergeを
 
 デプロイされたCanvasアプリでは実際にお絵かきをすることが可能です。お絵かきした内容は一定時間後にポータル画面にも反映されますので、確認してみてください。
 
-## 8. `staging`ブランチから`master`ブランチへPull Requestの発行
+## 8. `staging` ブランチから `master` ブランチへPull Requestの発行
 
-手順 5. の内容と同様に、`staging`ブランチから`master`ブランチへPull Requestを発行します。
+手順 5. の内容と同様に、 `staging` ブランチから `master` ブランチへPull Requestを発行します。
 
-## 9. `master`ブランチへのPull Requestをmerge
+## 9. `master` ブランチへのPull Requestをmerge
 
-手順 6. の内容と同様に、`master`ブランチに`staging`ブランチからのPull Requestをmergeします。
+手順 6. の内容と同様に、 `master` ブランチに `staging` ブランチからのPull Requestをmergeします。
 
 showKsで事前に準備されているパイプライン管理から、mergeを契機にあなたのアプリコンテナが自動的にproduction環境へビルド/デプロイされます。
 
-**注意：`author.json`以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
+**注意： `author.json` 以外のファイルを更新した場合は制約違反として自動ビルドが中止されます。その他のファイルは更新しないようにご注意ください。**
 
 
 ## 10. アプリ更新の確認（Production環境）
