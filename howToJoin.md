@@ -85,7 +85,7 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
     - production（本番）環境用のブランチです。
     - 直接 commit はせずに、staging ブランチから Pull Request を発行してコードをmergeします。
 
-開発用ブランチ（`feature` ブランチ）に切り替えファイルブラウザから `srcフォルダ` > `data` フォルダ > `author.json` ファイル の順にアクセスします。
+開発用ブランチ（ `feature` ブランチ）に切り替えファイルブラウザから `srcフォルダ` > `data` フォルダ > `author.json` ファイル の順にアクセスします。
 
 ![ファイルブラウズ](./images/file_browse.png)
 
@@ -141,3 +141,7 @@ showKsで事前に準備されているパイプライン管理から、mergeを
 ## 10. アプリ更新の確認（Production環境）
 
 [production環境用のポータル画面](https://portal.showks.cloudnativedays.jp)から、あなたのCanvasアプリ内のコメントが更新されることを確認します。デプロイが完了するまでは時間が必要となりますので、変更されない場合は少し時間を空けてから再確認してください。
+
+
+
+
