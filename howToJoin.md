@@ -2,23 +2,23 @@
 
 # showKsへの参加方法（簡易版）
 
-1. Githubアカウントを準備
+1. Github アカウントを準備
 2. [登録フォーム](https://form.showks.cloudnativedays.jp/)からユーザ登録（ユーザ名は`小文字`と`数字`と`ｰ`のみ利用可）
-3. あなた専用レポジトリへの`Collaborator invite`を受諾（`https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名/invitations`）
+3. あなた専用レポジトリへの `Collaborator invite` を受諾（`https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名/invitations`）
 4. あなた専用レポジトリ（`https://github.com/cloudnativedaysjp/showks-canvas-ユーザ名`）にアクセス
-5. 開発用ブランチ（`feature`ブランチ）の`src/data/author.json`ファイル内にある`comment`の値を編集してcommit
-6. 開発用ブランチ（`feature`ブランチ）から`staging`ブランチへPull Request
-7. `staging`ブランチへのPull Requestをmerge
-8. [staging環境用のポータル画面](https://portal.stg.showks.cloudnativedays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
-9. `staging`ブランチから`master`ブランチへPull Request
-10. `master`ブランチへのPull Requestをmerge
-11. [production環境用のポータル画面](https://portal.showks.cloudnativedays.jp)からあなたのCanvasアプリ内のコメントが更新されることを確認
+5. 開発用ブランチ（`feature`ブランチ）の `src/data/author.json` ファイル内にある `comment` の値を編集して commit
+6. 開発用ブランチ（`feature`ブランチ）から `staging` ブランチへ Pull Request
+7. `staging` ブランチへの Pull Request を merge
+8. [staging環境用のポータル画面](https://portal.stg.showks.cloudnativedays.jp)からあなたの Canvas アプリ内のコメントが更新されることを確認
+9. `staging`ブランチから`master`ブランチへ Pull Request
+10. `master`ブランチへの Pull Request を merge
+11. [production環境用のポータル画面](https://portal.showks.cloudnativedays.jp)からあなたの Canvas アプリ内のコメントが更新されることを確認
 
 # showKsへの参加方法（詳細版）
 
 ## 1. 事前準備
 
-showKsの参加には[Github](https://github.com)のアカウントが必要です。必ず事前にGithubアカウントを作成し、ユーザ名を確認しておいてください。
+showKs の参加には [Github](https://github.com) のアカウントが必要です。必ず事前に Github アカウントを作成し、ユーザ名を確認しておいてください。
 
 ## 2. ユーザ登録
 
@@ -29,33 +29,33 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 登録フォームでは、次の情報を入力します。
 
 - **Username（必須）**
-    - showKsで使用するユーザ名です。
-    - Kubernetesのリソース名にも使用されるため`小文字`と`数字`と`ｰ`のみ利用可能です。
-    - 既存のUsernameと重複した場合はエラーになります。別の名前を選択してください。
-    - このユーザ名を元にあなた専用のリポジトリが[Github](https://github.com/cloudnativedaysjp)上に作成されます。
+    - showKs で使用するユーザ名です。
+    - Kubernetes のリソース名にも使用されるため `小文字` と `数字` と `ｰ` のみ利用可能です。
+    - 既存の Username と重複した場合はエラーになります。別の名前を選択してください。
+    - このユーザ名を元にあなた専用のリポジトリが [Github](https://github.com/cloudnativedaysjp) 上に作成されます。
 - **Github（必須）**
-    - あなたのGithubアカウント名を入力してください。
-    - このアカウントはお絵かきアプリからLinkされます。
-    - 存在しないGithubアカウント名が指定された場合はエラーになります。
+    - あなたの Github アカウント名を入力してください。
+    - このアカウントはお絵かきアプリから Link されます。
+    - 存在しない Github アカウント名が指定された場合はエラーになります。
 - **Twitter（必須）**
-    - あなたのTwitterアカウント名を入力してください。
-    - このアカウントはお絵かきアプリからLinkされます。
-    - Twitterアカウントをお持ちでない場合は`cloudnativedaysjp`を指定します。
+    - あなたの Twitter アカウント名を入力してください。
+    - このアカウントはお絵かきアプリから Link されます。
+    - Twitter アカウントをお持ちでない場合は `cloudnativedaysjp` を指定します。
 - **Comment**
     - 任意のメッセージを入力します。
     - このメッセージはお絵かきアプリに表示されます。
 
-入力が完了したら`Create Project`をクリックしてProjectを新規作成します。
+入力が完了したら `Create Project` をクリックして Project を新規作成します。
 
-処理の完了までは暫く時間がかかります。画面が遷移し`Project was successfully create`の表示がでるまで待機してください。
+処理の完了までは暫く時間がかかります。画面が遷移し `Project was successfully create` の表示がでるまで待機してください。
 
-## 3. あなた専用レポジトリへのCollaborator inviteの受諾
+## 3. あなた専用レポジトリへの Collaborator invite の受諾
 
-遷移後のページには、あなた専用の確認用リンクが表示されています。このページをブックマークしておくと、後からConcourse CIやGithub Repositoryへアクセスしやすくなるのでオススメです。
+遷移後のページには、あなた専用の確認用リンクが表示されています。このページをブックマークしておくと、後から Concourse CI や Github Repository へアクセスしやすくなるのでオススメです。
 
-ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。このリポジトリは、[showks-canvas](https://github.com/cloudnativedaysjp/showks-canvas)からForkされたものです。
+ユーザ登録によりあなた専用のリポジトリが自動的に用意されます。このリポジトリは、 [showks-canvas](https://github.com/cloudnativedaysjp/showks-canvas) から Fork されたものです。
 
-あなた専用のリポジトリには初期状態では編集権限が設定されていません。あなた専用のリポジトリの作成後にGithubからCollaboratorへのInviteが自動で行われますのでこれを受諾します。
+あなた専用のリポジトリには初期状態では編集権限が設定されていません。あなた専用のリポジトリの作成後に Github から Collaborator への Invite が自動で行われますのでこれを受諾します。
 
 処理手順の2.で最後に表示された画面にあるリンクから受諾画面へ遷移します。
 
@@ -67,7 +67,7 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 ## 4. あなた専用リポジトリの確認
 
-[Github](https://github.com/cloudnativedaysjp)へアクセスし、あなた専用のリポジトリが作成されていることを確認します。リポジトリ名は`showks-canvas-ユーザ名`で作成されています。検索機能がありますので活用してください。
+[Github](https://github.com/cloudnativedaysjp) へアクセスし、あなた専用のリポジトリが作成されていることを確認します。リポジトリ名は `showks-canvas-ユーザ名` で作成されています。検索機能がありますので活用してください。
 
 ![専用リポジトリの検索](./images/searchRepository.png)
 
@@ -77,29 +77,29 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 
 - feature
     - feature（開発）環境用のブランチです。
-    - 直接commitはせずに、featureブランチからPull Requestを発行してコードをmergeします。
+    - 直接 commit はせずに、feature ブランチから Pull Request を発行してコードをmergeします。
 - staging
     - staging（ステージング）環境用のブランチです。
-    - 直接commitはせずに、featureブランチからPull Requestを発行してコードをmergeします。
+    - 直接 commit はせずに、feature ブランチから Pull Request を発行してコードをmergeします。
 - master
     - production（本番）環境用のブランチです。
-    - 直接commitはせずに、stagingブランチからPull Requestを発行してコードをmergeします。
+    - 直接 commit はせずに、staging ブランチから Pull Request を発行してコードをmergeします。
 
-開発用ブランチ（`feature`ブランチ）に切り替えファイルブラウザから `srcフォルダ` > `data`フォルダ > `author.json`ファイル の順にアクセスします。
+開発用ブランチ（`feature` ブランチ）に切り替えファイルブラウザから `srcフォルダ` > `data` フォルダ > `author.json` ファイル の順にアクセスします。
 
 ![ファイルブラウズ](./images/file_browse.png)
 
-編集ボタンから`author.json`を編集します。ユーザ登録の際に入力した値がjson形式で埋め込まれていますので`comment`の値だけを任意の文字列に置き換えてください。
+編集ボタンから `author.json` を編集します。ユーザ登録の際に入力した値が json 形式で埋め込まれていますので `comment` の値だけを任意の文字列に置き換えてください。
 
 ![author.json編集](./images/edit_author_json.png)
 
-値を更新後、画面下部の`Commit changes`欄に適切なコメントを入力し、`Commit directly to the staging branch.`にチェックが入っていることを確認してから`Commit changes`ボタンをクリックします。
+値を更新後、画面下部の `Commit changes` 欄に適切なコメントを入力し、`Commit directly to the staging branch.` にチェックが入っていることを確認してから `Commit changes` ボタンをクリックします。
 
 ![commit](./images/commit.png)
 
-## 5. 開発用ブランチから`staging`ブランチへPull Requestの発行
+## 5. 開発用ブランチから `staging` ブランチへPull Requestの発行
 
-開発用ブランチ（`feature`ブランチ）から`staging`ブランチへPull Requestを発行します。画面上部のタブから`Pull requests`を選択し`Compare & pull request`をクリックします。
+開発用ブランチ（`feature`ブランチ）から `staging` ブランチへPull Requestを発行します。画面上部のタブから`Pull requests`を選択し`Compare & pull request`をクリックします。
 
 ![pull requestの作成](./images/new_pull_request.png)
 
