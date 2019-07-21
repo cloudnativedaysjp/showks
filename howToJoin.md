@@ -40,7 +40,7 @@ showKsの参加には[Github](https://github.com)のアカウントが必要で�
 - **Twitter（必須）**
     - あなたのTwitterアカウント名を入力してください。
     - このアカウントはお絵かきアプリからLinkされます。
-    - Twitterアカウントをお持ちでない場合は `cloudnativedaysjp` を指定します。
+    - Twitterアカウントをお持ちでない場合は `cloudnativedays` を指定します。
 - **Comment**
     - 任意のメッセージを入力します。
     - このメッセージはお絵かきアプリに表示されます。
