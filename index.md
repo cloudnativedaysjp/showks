@@ -20,7 +20,7 @@ showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照�
 
 前回のJKD v18.12におけるshowKsについては[こちら](./howToJoin.md)をご参照ください。
 
-また、この前回のshowKsプロジェクトの軌跡を技術書典6において「showKsではじめるクラウドネイティブ開発」という1冊の本にまとめました。
+また、この前回のshowKsプロジェクトの軌跡を[技術書典6](https://techbookfest.org/event/tbf06)において「showKsではじめるクラウドネイティブ開発」という1冊の本にまとめました。
 なぜこのプロジェクトが企画されたのかや、より詳しい内部のアーキテクチャー実装についての話、またクラウドネイティブを実現するのに苦労したポイントなど、多くのエッセンスを詰め込んでいます。ご興味のある方は、[こちら](https://booth.pm/ja/items/1318454)より、詳細をご覧ください。
 
 # showk3sとの連携
@@ -35,7 +35,7 @@ showKsでは、お絵かきアプリ[showks-canvas](https://github.com/cloudnati
 
 JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のクラスターを[Google Cloud Platdform](https://cloud.google.com)上で構成し、[Concourse](https://concourse-ci.org)や[Spinnaker](https://www.spinnaker.io)などのCI/CDツールによりパイプライン管理をすることで、マイクロサービス化されたコンテナアプリをクラウドネイティブに開発できるように構成されています。
 
-また、showksで使用しているコードや設定ファイル、ドキュメント等は[Github](https://github.com/containerdaysjp)上で公開されていますので、どなたでもご自分で同じ環境を作り上げることが可能です。
+また、showksで使用しているコードや設定ファイル、ドキュメント等は[Github](https://github.com/cloudnativedaysjp)上で公開されていますので、どなたでもご自分で同じ環境を作り上げることが可能です。
 
 ## showKsの参加および開発体験の流れ
 
@@ -67,7 +67,7 @@ showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照�
 - スマホ/タブレット端末ブラウザからの描写
 - 消しゴム機能
 
-showKs Canvasアプリのリポジトリは[こちら](https://github.com/containerdaysjp/showks-canvas)です。showKsへの参加登録が完了すると、このリポジトリからForkされた
+showKs Canvasアプリのリポジトリは[こちら](https://github.com/cloudnativedaysjp/showks-canvas)です。showKsへの参加登録が完了すると、このリポジトリからForkされた
 あなた専用のリポジトリが自動的に作成されます。
 
 ## showKs portal
@@ -78,8 +78,8 @@ showKs参加者がそれぞれデプロイしたアプリコンテナから、�
 
 また、showKsにはstaging（ステージング）とproduction（本番）の2つの環境が用意されてますが、showKs portalは環境毎に独立して用意されています。
 
- - [staging環境用のポータル](https://portal.stg.showks.containerdays.jp)
- - [production環境用のポータル](https://portal.showks.containerdays.jp)
+ - [staging環境用のポータル](https://portal.stg.showks.cloudnativedays.jp)
+ - [production環境用のポータル](https://portal.showks.cloudnativedays.jp)
 
 
 # 注意事項
@@ -89,25 +89,24 @@ showKsの参加に際して、次の事項を遵守頂きますようご協力�
 - showKsで公開しているコードや情報などを無断で商用利用しないでください。
 - Canvasアプリコンテナで公序良俗に反するコメントやイラストなどを表示させないでください。
   - Canvasアプリはインターネットへ公開される点にご留意ください。
-  - [JKDのCode of Conduct（行動規範）](https://containerdays.jp/#event-slides)も併せてご一読ください。
+  - [CNDTのCode of Conduct（行動規範）](https://cloudnativedays.jp/cndt2019/#CoC)も併せてご一読ください。
 
 # ドキュメント
 
 showKsで利用しているコンポーネントに関する情報は、次のドキュメントリポジトリに随時集約されます。
 
-- [showKs-docs](https://github.com/containerdaysjp/showks-docs)
+- [showKs-docs](https://github.com/cloudnativedaysjp/showks-docs)
 
 
 # 展示ブース
 
-JKD v18.12では、受付隣の1番ブースにおいてshowKsのデモ展示をしています。
-
-展示ブースでは次のようなConcourseやSpinnakerの管理者用ダッシュボードなどをご確認頂けます。
+展示会場奥側の書籍販売ブース横にて、showKsおよびshowK3sのブース展示をしています。
+展示ブースでは、showKs Canvas/PortalやshowK3sの画面、さらには各種管理者用ダッシュボードなどをご確認頂けます。
 
 ![showks-concourse](./images/showks-concourse.png)
 ![showks-spinnaker](./images/showks-spinnaker.png)
 
-また、showKsに関しての質問も受け付けておりますので、なにかお聞きになりたいことがありましたらブース担当者までお気軽にお声がけください。
+また、showKs/showK3sに関しての質問も受け付けておりますので、何かお聞きになりたいことがありましたらブース担当者までお気軽にお声がけください。
 
 # ハッシュタグ
 
