@@ -28,7 +28,7 @@ Cloud Native Days Tokyo 2019（CNDT2019）におけるshowKsでは、上記の�
     - ユーザ登録におけるOparator処理により各ユーザ情報を登録
     - showKs Canvas/Portalにおいてどのユーザかを意識した機能の利用が可能に
   - IoT用途に強みのある[k3s](https://k3s.io/)との連携
-    - ARMボード上で稼働するk3sクラスターを展示
+    - ARMボード上で稼働するk3sクラスターを構築して「showk3s」アプリを稼働
     - showKs canvasで描写されたイラストをRook経由でshowK3sへ受け渡し
     - showK3sでは受け取ったイラストをカメラ画像およびQRコードと合成して表示
 
@@ -47,7 +47,10 @@ showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照�
 前回のJKD v18.12におけるshowKsについては[こちら](./howToJoin.md)をご参照ください。
 
 また、この前回のshowKsプロジェクトの軌跡を[技術書典6](https://techbookfest.org/event/tbf06)において「showKsではじめるクラウドネイティブ開発」という1冊の本にまとめました。
-なぜこのプロジェクトが企画されたのかや、より詳しい内部のアーキテクチャー実装についての話、またクラウドネイティブを実現するのに苦労したポイントなど、多くのエッセンスを詰め込んでいます。ご興味のある方は、[こちら](https://booth.pm/ja/items/1318454)より、詳細をご覧ください。
+
+なぜこのプロジェクトが企画されたのかや、より詳しい内部のアーキテクチャー実装についての話、またクラウドネイティブを実現するのに苦労したポイントなど、多くのエッセンスを詰め込んでいます。
+
+ご興味のある方は、[こちら](https://booth.pm/ja/items/1318454)より、詳細をご覧ください。
 
 # showk3sとの連携
 
@@ -68,14 +71,18 @@ JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)の�
 ![architecture simple](./images/showKs_Overview.png)
 
 1. 登録フォームからユーザ登録
-2. あなた専用のGithubリポジトリが自動作成
-3. コードを変更してfeatureブランチへcommit
-4. featureブランチからstagingブランチへPullRequest/merge
-5. staging環境へアプリコンテナが自動ビルド/デプロイ
-6. ブラウザからCanvasアプリへアクセスし動作確認
-7. stagingブランチからmasterブランチへPullRequest/merge
-8. production環境へアプリコンテナが自動ビルド/デプロイ
-9. ブラウザからCanvasアプリへアクセスし動作確認
+2. formアプリが自動的にCRDを作成
+3. Custom Controllerが次の3つの処理を自動実行
+  - あなた専用のGithubリポジトリを作成
+  - あなた専用のCIパイプラインを作成
+  - あなたの認証情報を登録
+4. コードを変更してfeatureブランチへcommit
+5. featureブランチからstagingブランチへPull Request/merge
+6. staging環境へアプリコンテナが自動ビルド/デプロイ
+7. ブラウザからPortal/Canvasアプリへアクセスし動作確認
+8. stagingブランチからmasterブランチへPull Request/merge
+9. production環境へアプリコンテナが自動ビルド/デプロイ
+10. ブラウザからPortal/Canvasアプリへアクセスし動作確認
 
 showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照ください。
 
