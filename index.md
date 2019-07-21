@@ -1,5 +1,3 @@
-![showKs logo](./images/showKs_logo.png)
-
 # showKsとは
 
 日本最大級規模のコンテナ関連技術カンファレンスである[JapanContainerDays v18.12](https://containerdays.jp/)（通称”JKD v18.12”）のショーケース企画として、有志のボランティアメンバーによって用意されたのが「showKs（ショーケース）」です。
