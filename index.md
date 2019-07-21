@@ -65,7 +65,7 @@ JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)の�
 
 ## showKsの参加および開発体験の流れ
 
-![architecture simple](./images/architecture_simple.png)
+![architecture simple](./images/showKs_Overview.png)
 
 1. 登録フォームからユーザ登録
 2. あなた専用のGithubリポジトリが自動作成
