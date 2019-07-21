@@ -1,5 +1,3 @@
-![showKs logo](./images/showKs_logo.png)
-
 # showKsへの参加方法（簡易版）
 
 1. Githubアカウントを準備
