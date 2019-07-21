@@ -27,7 +27,7 @@ showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照�
 
 今回のshowKsでは、IoT分野での利用などを視野にKubernetesの機能を絞り込んで実装した軽量k8sの[k3s](https://k3s.io/)を用いたショーケース企画「showK3s」を平行プロジェクトとして実装・連携しています。
 
-showKsとshowK3sプロジェクト連携についての詳細は、[こちら](./showk3s.md)をご参照ください。
+showKsとshowK3sプロジェクト連携についての詳細は、[こちら](./showK3s.md)をご参照ください。
 
 # showKs構成
 
