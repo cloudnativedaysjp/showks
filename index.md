@@ -23,13 +23,13 @@ Cloud Native Days Tokyo 2019（CNDT2019）におけるshowKsでは、上記の�
 
   - よりKubernetes Nativeなアーキテクチャーへ
     - ユーザ登録処理をOparator化
-    - CDツールをSpinnakerからArgoCDへ変更
-    - 永続ストレージをGCSからRook/Cephに置き換え（一部残留）
+    - CDツールを[Spinnaker](https://www.spinnaker.io/)から[Argo CD](https://argoproj.github.io/argo-cd/)へ変更
+    - 永続ストレージをGCSから[Rook](https://rook.io/)/Cephに置き換え（一部残留）
   - 認証機構の導入
     - [Keycloak](https://www.keycloak.org)を新規追加
     - ユーザ登録におけるOparator処理により各ユーザ情報を登録
     - showKs Canvas/Portalにおいてどのユーザかを意識した機能の利用が可能に
-  - IoT用途に強みのあるk3sとの連携
+  - IoT用途に強みのある[k3s](https://k3s.io/)との連携
     - ARMボード上で稼働するk3sクラスターを展示
     - showKs canvasで描写されたイラストをRook/Ceph経由でshowK3sへ受け渡し
     - showK3sでは受け取ったイラストをカメラ画像およびQRコードと合成して表示
