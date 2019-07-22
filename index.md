@@ -62,7 +62,7 @@ showKsとshowK3sプロジェクト連携についての詳細は、[こちら](.
 
 showKsでは、お絵かきアプリ[showks-canvas](https://github.com/cloudnativedaysjp/showks-canvas)を題材にクラウドネイティブな開発を体験して頂けます。
 
-JKD v18.12におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のクラスターを[Google Cloud Platdform](https://cloud.google.com)上で構成し、[Concourse](https://concourse-ci.org)や[Spinnaker](https://www.spinnaker.io)などのCI/CDツールによりパイプライン管理をすることで、マイクロサービス化されたコンテナアプリをクラウドネイティブに開発できるように構成されています。
+CNDT 2019におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のクラスターを[Google Cloud Platdform](https://cloud.google.com)上で構成し、[Concourse](https://concourse-ci.org)や[Argo CD](https://argoproj.github.io/argo-cd/)などのCI/CDツールによりパイプライン管理をすることで、マイクロサービス化されたコンテナアプリをクラウドネイティブに開発できるように構成されています。
 
 また、showksで使用しているコードや設定ファイル、ドキュメント等は[Github](https://github.com/cloudnativedaysjp)上で公開されていますので、どなたでもご自分で同じ環境を作り上げることが可能です。
 
