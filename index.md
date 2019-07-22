@@ -73,9 +73,9 @@ CNDT 2019におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のク
 1. 登録フォームからユーザ登録
 2. formアプリが自動的にCRDを作成
 3. Custom Controllerが次の3つの処理を自動実行
-  - あなた専用のGithubリポジトリを作成
-  - あなた専用のCIパイプラインを作成
-  - あなたの認証情報を登録
+  1. あなた専用のGithubリポジトリを作成
+  2. あなた専用のCIパイプラインを作成
+  3. あなたの認証情報を登録
 4. コードを変更してfeatureブランチへcommit
 5. featureブランチからstagingブランチへPull Request/merge
 6. staging環境へアプリコンテナが自動ビルド/デプロイ
