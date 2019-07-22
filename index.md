@@ -73,9 +73,9 @@ CNDT 2019におけるshowKs環境は、[Kubernetes](https://kubernetes.io)のク
 1. 登録フォームからユーザ登録
 2. formアプリが自動的にCRDを作成
 3. Custom Controllerが次の3つの処理を自動実行
-  1. あなた専用のGithubリポジトリを作成
-  2. あなた専用のCIパイプラインを作成
-  3. あなたの認証情報を登録
+  - あなた専用のGithubリポジトリを作成
+  - あなた専用のCIパイプラインを作成
+  - あなたの認証情報を登録
 4. コードを変更してfeatureブランチへcommit
 5. featureブランチからstagingブランチへPull Request/merge
 6. staging環境へアプリコンテナが自動ビルド/デプロイ
@@ -100,8 +100,7 @@ showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照�
 - スマホ/タブレット端末ブラウザからの描写
 - 消しゴム機能
 
-showKs Canvasアプリのリポジトリは[こちら](https://github.com/cloudnativedaysjp/showks-canvas)です。showKsへの参加登録が完了すると、このリポジトリからForkされた
-あなた専用のリポジトリが自動的に作成されます。
+showKs Canvasアプリのリポジトリは[こちら](https://github.com/cloudnativedaysjp/showks-canvas)です。showKsへの参加登録が完了すると、このリポジトリの内容をコピーした、あなた専用のリポジトリが自動的に作成されます。
 
 ## showKs portal
 
@@ -137,7 +136,8 @@ showKsで利用しているコンポーネントに関する情報は、次の�
 展示ブースでは、showKs Canvas/PortalやshowK3sの画面、さらには各種管理者用ダッシュボードなどをご確認頂けます。
 
 ![showks-concourse](./images/showks-concourse.png)
-![showks-spinnaker](./images/showks-spinnaker.png)
+![showks-argocd](./images/showks-argocd.png)
+![showks-weavescope](./images/showks-weavescope.png)
 
 また、showKs/showK3sに関しての質問も受け付けておりますので、何かお聞きになりたいことがありましたらブース担当者までお気軽にお声がけください。
 
