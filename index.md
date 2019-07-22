@@ -44,7 +44,7 @@ showKsへの参加手順の詳細は、[こちら](./howToJoin.md)をご参照�
 
 # 前回のshowKsの詳細
 
-前回のJKD v18.12におけるshowKsについては[こちら](./howToJoin.md)をご参照ください。
+前回のJKD v18.12におけるshowKsについては[こちら](http://showks.containerdays.jp)をご参照ください。
 
 また、この前回のshowKsプロジェクトの軌跡を[技術書典6](https://techbookfest.org/event/tbf06)において「showKsではじめるクラウドネイティブ開発」という1冊の本にまとめました。
 
